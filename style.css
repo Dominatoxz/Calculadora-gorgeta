@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:hsl(185, 41%, 84%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Mono';
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 50px;
+    background-color: hsl(0, 100%, 100%);
+    border-radius: 20px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left section{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: hsl(183, 100%, 15%);
+}
+
+.input-icon{
+    position: relative;
+}
+
+.input-icon img{
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+
+}
+
+.btn-section{
+    display: grid;
+    grid-template-columns: repeat(3, 5rem);
+    gap: 10px;
+}
+
+button{
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 100%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    font-family: 'Space Mono';
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+                box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+                border-color 0.3s ease;
+}
+
+button:hover{
+    background-color: hsl(172, 67%, 45%);
+    transform: translateY(-3px);
+}
+
+.main-section input{
+    text-align: right;
+    border: none;
+    background-color: hsl(189, 47%, 97%);
+    border-radius: 10px;
+    font-family: 'Space Mono';
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+                box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+                border-color 0.3s ease;
+}
+
+.main-section input:hover, .top-section input:hover,
+.bottom-section input:hover{
+    border: 2px solid  hsl(172, 67%, 45%);
+    transform: translateY(-3px);
+}
+
+.main-section input:active, .top-section input:active,
+.bottom-section input:active{
+    border: 2px solid  hsl(172, 67%, 45%);
+}
+
+
+
+.top-section input, .bottom-section input{
+    border: none;
+    background-color: hsl(189, 47%, 97%);
+    height: 40px;
+    border-radius: 10px;
+    text-align: right;
+    font-family: 'Space Mono';
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+                box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+                border-color 0.3s ease;
+}
